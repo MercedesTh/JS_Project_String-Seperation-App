@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS_Project_String-Seperation-App</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <h1>🦄 Magical String Seperation App ✨</h1>
+        <form action="" onsubmit="return false">
+            <label for="sepString">String to be seperated:</label>
+            <input type="text" name="start" id="sepString">
+            <label for="sepPosition">Position of seperation;</label>
+            <input type="text" name="position" id="sepPosition">
+            <article id="radio">
+                <div id="before">
+                    <input type="radio" name="seperate" id="sepBefore" checked>
+                    <label for="sepBefore">seperate before</label>
+                </div>
+                <div id="after">
+                    <input type="radio" name="seperate" id="sepAfter">
+                    <label for="sepAfter">seperate after</label>
+                </div>
+            </article>
+        </form>
+        <a onClick="seperate()" href="#">Seperate</a>
+        <h2>Output</h2>
+        <section id="output">
+            <article>
+                <h3 class="parts">Front Part</h3>
+                <div id="output1"></div>
+            </article>
+            <article>
+                <h3 class="parts">Rear Part</h3>
+                <div id="output2"></div>
+            </article>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/a95508fa23.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
